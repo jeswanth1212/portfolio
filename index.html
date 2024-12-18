@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Pixel Stars</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <nav>
+        <ul>
+          <li><button onclick="scrollToSection('home')">Home</button></li>
+          <li><button onclick="scrollToSection('skills')">Skills</button></li>
+          <li><button onclick="scrollToSection('projects')">Projects</button></li>
+          <li><button onclick="scrollToSection('achievements')">Achievements</button></li>
+          <li><button onclick="scrollToSection('certifications')">Certifications</button></li>
+          <li><button onclick="scrollToSection('clubs')">Clubs</button></li>
+          <li><button onclick="scrollToSection('contact')">Contact</button></li>
+        </ul>
+      </nav>
+      
+      <section id="home" class="section">Home Section</section>
+      <section id="skills" class="section">Skills Section</section>
+      <section id="projects" class="section">Projects Section</section>
+      <section id="achievements" class="section">Achievements Section</section>
+      <section id="certifications" class="section">Certifications Section</section>
+      <section id="clubs" class="section">Clubs Section</section>
+      <section id="contact" class="section">Contact Section</section>
+      <script>
+        const sections = document.querySelectorAll("section"); // All sections
+        const navButtons = document.querySelectorAll("nav button"); // All nav buttons
+      
+        // Smooth scrolling when nav buttons are clicked
+        navButtons.forEach((button, index) => {
+          button.addEventListener("click", () => {
+            sections[index].scrollIntoView({
+              behavior: "smooth", // Smooth scrolling
+              block: "start", // Scroll to the top of the section
+            });
+          });
+        });
+      
+        // Highlight the button for the active section
+        const highlightActiveButton = () => {
+          let index = sections.length;
+      
+          // Find the section currently in view
+          while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+      
+          // Remove active class from all buttons
+          navButtons.forEach((btn) => btn.classList.remove("active"));
+      
+          // Add active class to the button of the current section
+          navButtons[index].classList.add("active");
+        };
+      
+        // Listen for scroll events
+        window.addEventListener("scroll", highlightActiveButton);
+      </script>
+      
+      
+      
+      
+      
+  </body>
+</html>
