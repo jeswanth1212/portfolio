@@ -609,6 +609,9 @@ nav {
   position: fixed; /* Fix the navbar at the top */
   top: 10;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   transition: top 0.3s ease; /* Smooth transition */
   z-index: 10; /* Ensure it stays above other content */
 }
@@ -619,7 +622,7 @@ ul {
   list-style: none;
   width: 100%;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 
 li {
@@ -630,15 +633,23 @@ li {
 
 /* Button Styling */
 button {
-  font-size: 20px;
-  background: transparent; /* No background when not hovered */
+  font-size: 17px;
+  font-family: system-ui;
+  background: transparent; /* No background */
   border: 0;
-  color: white; /* No text color when not hovered */
-  letter-spacing: 3px;
-  line-height: 1;
-  box-shadow: none; /* No shadow when not hovered */
+  color: white; /* Text color */
+  letter-spacing: 2px; /* Adjust letter-spacing if needed */
+  line-height: 0.4;
+  box-shadow: none; /* No shadow */
   outline: transparent;
   position: relative;
+  text-transform: uppercase; /* Make text uppercase for a uniform look */
+  padding: 10px 20px; /* Padding for button size */
+  display: inline-block;
+  white-space: nowrap; /* Ensure text doesn't wrap */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  min-width: auto; /* Let the width adjust according to content */
+  height: auto; 
 }
 
 button::after {
@@ -664,11 +675,12 @@ button::after {
 
 button:hover {
   color: #fff; /* Text appears on hover */
-  box-shadow: 6px 0px 0px white; /* Add shadow */
+  box-shadow: 4px 0px 0px darkorange; /* Add shadow */
+  line-height: 0.4px;
 }
 
 button:hover::after {
-  background: linear-gradient(45deg, transparent 3%, white 3%, white 5%, white 5%);
+  background: linear-gradient(45deg, transparent 3%, black 10%, orange 55%, darkorange 5%);
   text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
@@ -747,6 +759,6 @@ html {
   color: white; /* Ensures content remains visible */
 }
 button.active {
-  color: #fff; /* Text color */
-  box-shadow: 6px 0px 0px white; /* Add shadow */
+  color: darkorange; /* Text color as pink */
+  box-shadow: 4px 0px 0px darkorange; /* Box shadow in pink */
 }
