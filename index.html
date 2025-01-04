@@ -1,114 +1,178 @@
-
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Parallax Pixel Stars</title>
-        <link
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Pixel Stars</title>
+    <link
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
         rel="stylesheet"
         type="text/css"
-        />
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <nav>
-            <ul>
+    />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <nav>
+        <ul>
             <li><button onclick="scrollToSection('home')">HOME</button></li>
-            <li><button onclick="scrollToSection('skills')">SKILLS</button></li>
             <li><button onclick="scrollToSection('projects')">PROJECTS</button></li>
             <li><button onclick="scrollToSection('achievements')">ACHIEVEMENTS</button></li>
             <li><button onclick="scrollToSection('certifications')">CERTIFICATIONS</button></li>
             <li><button onclick="scrollToSection('clubs')">CLUBS</button></li>
             <li><button onclick="scrollToSection('contact')">CONTACT</button></li>
-            </ul>
-        </nav>
-        
-        <section id="home" class="section">
-            <div class="card">
-                <img src="prog.jpg" alt="Profile Picture" />
-                <div>
-                  <h2>JESWANTH S</h2>
-                  <h3>Machine Learning Engineer | Web Developer | Competitive Coder |                                         </h3>
-                  <p></p>
-                  <div class="socials">
-                    <button>
-                      <i class="fa-brands fa-dribbble"></i>
-                    </button>
-                    <button>
-                      <i class="fa-brands fa-pinterest"></i>
-                    </button>
-                    <button>
-                      <i class="fa-brands fa-codepen"></i>
-                    </button>
-                  </div>
-                </div>
+        </ul>
+    </nav>
+    
+    <section id="home" class="section">
+        <div class="card">
+            <img src="prog.jpg" alt="Profile Picture" />
+            <div>
+              <h2>JESWANTH S</h2>
+              <h3>Machine Learning Engineer | Web Developer | Competitive Coder |</h3>
+              <p></p>
+              <div class="socials">
+                <button>
+                  <i class="fa-brands fa-dribbble"></i>
+                </button>
+                <button>
+                  <i class="fa-brands fa-pinterest"></i>
+                </button>
+                <button>
+                  <i class="fa-brands fa-codepen"></i>
+                </button>
               </div>
-        </section>
-        <section id="skills" class="section">Skills Section</section>
-        <section id="projects" class="section">Projects Section</section>
-        <section id="achievements" class="section">Achievements Section</section>
-        <section id="certifications" class="section">Certifications Section</section>
-        <section id="clubs" class="section">Clubs Section</section>
-        <section id="contact" class="section">Contact Section</section>
+            </div>
+          </div>
+    </section>
+    <section id="projects" class="section">
+      <div class="project-cards-container">
+        <!-- First Card -->
+        <div id="project-card">
+          <div id="project-card-circles">
+            <div class="project-card-circle"></div>
+            <div class="project-card-circle"></div>
+            <div class="project-card-circle"></div>
+          </div>
+        
+          <div id="project-card-browser">
+            <div class="project-card-chevrons">
+              <svg viewBox="0 0 20 20" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path transform="translate(6.25 3.75)" d="M0,6.25,6.25,0l.875.875L1.75,6.25l5.375,5.375L6.25,12.5Z"></path>
+              </svg>
+              <svg viewBox="0 0 20 20" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path transform="translate(6.625 3.75)" d="M7.125,6.25.875,12.5,0,11.625,5.375,6.25,0,.875.875,0Z"></path>
+              </svg>
+            </div>
+            <div class="project-card-search-bar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7.89" height="7.887" viewBox="0 0 16.89 16.887">
+                <path d="M16.006,16.887h0l-4.743-4.718a6.875,6.875,0,1,1,.906-.906l4.719,4.744-.88.88ZM6.887,1.262a5.625,5.625,0,1,0,5.625,5.625A5.631,5.631,0,0,0,6.887,1.262Z" transform="translate(0.003 0)"></path>
+              </svg>
+              uiverse.io
+            </div>
+          </div>
+        </div>
+    
+        <!-- Second Card -->
+        <div id="project-card">
+          <div id="project-card-circles">
+            <div class="project-card-circle"></div>
+            <div class="project-card-circle"></div>
+            <div class="project-card-circle"></div>
+          </div>
+        
+          <div id="project-card-browser">
+            <div class="project-card-chevrons">
+              <svg viewBox="0 0 20 20" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path transform="translate(6.25 3.75)" d="M0,6.25,6.25,0l.875.875L1.75,6.25l5.375,5.375L6.25,12.5Z"></path>
+              </svg>
+              <svg viewBox="0 0 20 20" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path transform="translate(6.625 3.75)" d="M7.125,6.25.875,12.5,0,11.625,5.375,6.25,0,.875.875,0Z"></path>
+              </svg>
+            </div>
+            <div class="project-card-search-bar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7.89" height="7.887" viewBox="0 0 16.89 16.887">
+                <path d="M16.006,16.887h0l-4.743-4.718a6.875,6.875,0,1,1,.906-.906l4.719,4.744-.88.88ZM6.887,1.262a5.625,5.625,0,1,0,5.625,5.625A5.631,5.631,0,0,0,6.887,1.262Z" transform="translate(0.003 0)"></path>
+              </svg>
+              uiverse.io
+            </div>
+          </div>
+        </div>
+    
+        <!-- Third Card -->
+        <div id="project-card">
+          <div id="project-card-circles">
+            <div class="project-card-circle"></div>
+            <div class="project-card-circle"></div>
+            <div class="project-card-circle"></div>
+          </div>
+        
+          <div id="project-card-browser">
+            <div class="project-card-chevrons">
+              <svg viewBox="0 0 20 20" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path transform="translate(6.25 3.75)" d="M0,6.25,6.25,0l.875.875L1.75,6.25l5.375,5.375L6.25,12.5Z"></path>
+              </svg>
+              <svg viewBox="0 0 20 20" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path transform="translate(6.625 3.75)" d="M7.125,6.25.875,12.5,0,11.625,5.375,6.25,0,.875.875,0Z"></path>
+              </svg>
+            </div>
+            <div class="project-card-search-bar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7.89" height="7.887" viewBox="0 0 16.89 16.887">
+                <path d="M16.006,16.887h0l-4.743-4.718a6.875,6.875,0,1,1,.906-.906l4.719,4.744-.88.88ZM6.887,1.262a5.625,5.625,0,1,0,5.625,5.625A5.631,5.631,0,0,0,6.887,1.262Z" transform="translate(0.003 0)"></path>
+              </svg>
+              uiverse.io
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="achievements" class="section">Achievements Section</section>
+    <section id="certifications" class="section">Certifications Section</section>
+    <section id="clubs" class="section">Clubs Section</section>
+    <section id="contact" class="section">Contact Section</section>
 
-        
-        <script>
-            const sections = document.querySelectorAll("section"); // All sections
-            const navButtons = document.querySelectorAll("nav button"); // All nav buttons
-        
-            // Smooth scrolling when nav buttons are clicked
-            navButtons.forEach((button, index) => {
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navButtons = document.querySelectorAll("nav button"); 
+        navButtons.forEach((button, index) => {
             button.addEventListener("click", () => {
                 sections[index].scrollIntoView({
-                behavior: "smooth", // Smooth scrolling
-                block: "start", // Scroll to the top of the section
+                    behavior: "smooth", 
+                    block: "start", 
                 });
             });
-            });
-        
-            // Highlight the button for the active section
-            const highlightActiveButton = () => {
+        });
+    
+        const highlightActiveButton = () => {
             let index = sections.length;
-        
-            // Find the section currently in view
+    
             while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
-        
-            // Remove active class from all buttons
+    
             navButtons.forEach((btn) => btn.classList.remove("active"));
-        
-            // Add active class to the button of the current section
+    
             navButtons[index].classList.add("active");
-            };
-        
-            // Listen for scroll events
-            window.addEventListener("scroll", highlightActiveButton);
-            let lastScrollTop = 0; // Track the last scroll position
-    const navbar = document.querySelector("nav");
+        };
+    
+        window.addEventListener("scroll", highlightActiveButton);
+        let lastScrollTop = 0; 
+        const navbar = document.querySelector("nav");
 
-    window.addEventListener("scroll", () => {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        window.addEventListener("scroll", () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        if (scrollTop > lastScrollTop) {
-        // Scrolling down: hide the navbar
-        navbar.style.top = "-80px"; // Adjust based on navbar height
-        } else {
-        // Scrolling up: show the navbar
-        navbar.style.top = "0";
-        }
+            if (scrollTop > lastScrollTop) {
+                navbar.style.top = "-80px"; 
+            } else {
+                navbar.style.top = "0";
+            }
 
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Prevent negative scrolling
-    });
-        </script>
-        
-        
-        
-        
-        
-    </body>
-    </html>
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
+        });
+    </script>
+</body>
+</html>
+
+
